@@ -54,9 +54,11 @@ jobs:
         run: npm install
 
       - name: Inject programs.ts
+        env:
+          PROGRAMS_TS: ${{ secrets.PROGRAMS_TS }}
         run: |
           mkdir -p src/config
-          echo "${{ secrets.PROGRAMS_TS }}" > src/config/programs.ts
+          printf '%s' "$PROGRAMS_TS" > src/config/programs.ts
 
       - name: Build
         run: npm run build
