@@ -9,10 +9,10 @@ function ToolsLayout() {
 
   const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault()
-    if (location.pathname === '/tools') {
+    if (location.pathname === '/') {
       window.location.reload()
     } else {
-      navigate('/tools')
+      navigate('/')
     }
   }
 
@@ -21,21 +21,21 @@ function ToolsLayout() {
       <nav className="tools-nav">
         <div className="tools-nav-container">
           <div className="tools-nav-left">
-            <Link to="/tools" className="tools-nav-title-link" onClick={handleLogoClick}>
+            <Link to="/" className="tools-nav-title-link" onClick={handleLogoClick}>
               <h1 className="tools-nav-title">CGN Tools</h1>
             </Link>
           </div>
           <div className="tools-nav-links">
-            <Link to="/tools" className={`tools-nav-link ${location.pathname === '/tools' ? 'active' : ''}`}>
+            <Link to="/" className={`tools-nav-link ${location.pathname === '/' ? 'active' : ''}`}>
               📺 모니터링
             </Link>
-            <Link to="/tools/generator" className={`tools-nav-link ${location.pathname === '/tools/generator' ? 'active' : ''}`}>
+            <Link to="/generator" className={`tools-nav-link ${location.pathname === '/generator' ? 'active' : ''}`}>
               🔗 경로 생성
             </Link>
-            <Link to="/tools/upload" className={`tools-nav-link ${location.pathname === '/tools/upload' ? 'active' : ''}`}>
+            <Link to="/upload" className={`tools-nav-link ${location.pathname === '/upload' ? 'active' : ''}`}>
               📤 이미지 업로드
             </Link>
-            <Link to="/tools/parser" className={`tools-nav-link ${location.pathname === '/tools/parser' ? 'active' : ''}`}>
+            <Link to="/parser" className={`tools-nav-link ${location.pathname === '/parser' ? 'active' : ''}`}>
               📖 본문 파싱
             </Link>
             <div

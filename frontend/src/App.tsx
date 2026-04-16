@@ -10,8 +10,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Navigate to="/tools" replace />} />
-        <Route path="/tools" element={<ToolsLayout />}>
+        <Route path="/tools" element={<Navigate to="/" replace />} />
+        <Route path="/tools/*" element={<Navigate to="/" replace />} />
+        <Route path="/" element={<ToolsLayout />}>
           <Route index element={<MonitoringPage />} />
           <Route path="generator" element={<PathGeneratorPage />} />
           <Route path="upload" element={<ImageUploadPage />} />

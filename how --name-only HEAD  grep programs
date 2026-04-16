@@ -1,0 +1,32 @@
+[33mcommit 54e9b0b902238f16be2a542c3c43784ab7ad2f87[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: Jeong Cheon uk <interstander@cgnmail.net>
+Date:   Thu Apr 16 17:41:02 2026 +0900
+
+    Initial commit: cgn-tools project
+
+.env.example
+.gitignore
+backend/package.json
+backend/src/index.ts
+backend/tsconfig.json
+backend/wrangler.toml
+frontend/index.html
+frontend/package.json
+frontend/public/favicon.png
+frontend/src/App.tsx
+frontend/src/config/programs.example.ts
+frontend/src/config/programs.ts
+frontend/src/main.tsx
+frontend/src/pages/tools/ImageUploadPage.tsx
+frontend/src/pages/tools/MonitoringPage.tsx
+frontend/src/pages/tools/PathGeneratorPage.tsx
+frontend/src/pages/tools/TextParserPage.tsx
+frontend/src/pages/tools/ToolsLayout.css
+frontend/src/pages/tools/ToolsLayout.tsx
+frontend/src/pages/tools/tools.css
+frontend/src/styles/index.css
+frontend/src/vite-env.d.ts
+frontend/tsconfig.app.json
+frontend/tsconfig.json
+frontend/tsconfig.node.json
+frontend/vite.config.ts

@@ -88,7 +88,8 @@ function ImageUploadPage() {
             const formData = new FormData();
             formData.append("image", selectedFile);
             formData.append("filename", originalFilename);
-            const response = await fetch("/api/upload", { method: "POST", body: formData });
+            const workersUrl = import.meta.env.VITE_WORKERS_URL || ''
+            const response = await fetch(`${workersUrl}/api/upload`, { method: "POST", body: formData });
             const data = await response.json();
             if (response.ok) {
                 setUploadResult({ success: true, filename: data.filename || `${originalFilename}.png`, message: "업로드 성공!" });
