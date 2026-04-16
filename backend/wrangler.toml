@@ -1,0 +1,12 @@
+name = "cgn-tools-backend"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+AWS_REGION = "ap-northeast-2"
+
+# Secrets (set via: wrangler secret put SECRET_NAME)
+# AWS_ACCESS_KEY_ID
+# AWS_SECRET_ACCESS_KEY
+# S3_BUCKET_NAME

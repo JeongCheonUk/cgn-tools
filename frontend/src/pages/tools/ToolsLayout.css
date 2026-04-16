@@ -1,0 +1,137 @@
+.tools-app {
+  min-height: 100vh;
+  background-color: #1a1a1a;
+  padding-top: 72px;
+}
+
+.tools-nav {
+  background-color: #2a2a2a;
+  border-bottom: 2px solid #404040;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.tools-nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tools-nav-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.tools-back-btn {
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #888;
+  text-decoration: none;
+  border: 1px solid #404040;
+  border-radius: 6px;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.tools-back-btn:hover {
+  color: #fff;
+  border-color: #666;
+  background-color: #333;
+}
+
+.tools-nav-title-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.tools-nav-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  cursor: pointer;
+}
+
+.tools-nav-links {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.tools-nav-link {
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #aaa;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.2s;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.tools-nav-link:hover {
+  color: #ffffff;
+  background-color: #404040;
+}
+
+.tools-nav-link.active {
+  color: #ffffff;
+  background-color: #4a90e2;
+}
+
+.tools-nav-dropdown {
+  position: relative;
+}
+
+.tools-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  background-color: #2a2a2a;
+  border: 2px solid #404040;
+  border-radius: 6px;
+  min-width: 180px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  z-index: 1001;
+}
+
+.tools-dropdown-item {
+  display: block;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #aaa;
+  text-decoration: none;
+  transition: all 0.2s;
+  border-bottom: 1px solid #404040;
+}
+
+.tools-dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.tools-dropdown-item:hover {
+  color: #ffffff;
+  background-color: #404040;
+}
+
+.tools-container {
+  width: 100%;
+  min-height: calc(100vh - 72px);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
