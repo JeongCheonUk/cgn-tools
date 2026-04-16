@@ -10,3 +10,4 @@ backend/node_modules/
 .DS_Store
 Thumbs.db
 .wrangler/
+frontend/src/config/programs.ts
